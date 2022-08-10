@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import '../../index.css'
 
 
 function Nav(props) {
@@ -14,8 +15,8 @@ function Nav(props) {
     }, [currentPage]);
   
     return (    
-        <nav>
-          <ul className="flex-row">
+        <nav className = 'navBar'>
+          <ul className="navUL">
             {pages.map((Page) => (
               <li
                 className={`mx-5 ${

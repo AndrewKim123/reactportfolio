@@ -21,15 +21,15 @@ function App() {
 
   return (
     <div>
-     <Header>
-     <Nav
-      pages={pages}
-      setCurrentPage = {setCurrentPage}
-      currentPage = {currentPage}>
-      </ Nav>
-      </ Header>
+      <Header>
+        <Nav
+          pages={pages}
+          setCurrentPage={setCurrentPage}
+          currentPage={currentPage}/>
+       
+      </Header>
       <main>
-        <Page currentPage = {currentPage}></Page>
+        <Page currentPage={currentPage}></Page>
       </main>
       <Footer></Footer>
     </div>
